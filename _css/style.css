@@ -1,0 +1,257 @@
+html {
+  background-color: #f9f7f3; }
+
+body {
+  font-size: 16px;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 62.5%;
+  color: #333333; 
+  margin-bottom: 50px;
+}
+
+h1 {
+ 	font-family: 'Philosopher', sans-serif;
+ 	font-size: 4em;
+ 	margin-left: 0.5em;
+ 	margin-bottom: 0.5em;
+ 	animation-duration: 2s;
+    animation-name: fade;
+}
+
+span {
+ 	animation-duration: 2s;
+    animation-name: fade;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+	font-weight: bold;
+ 	font-size: 2.5em;
+ 	color:rgb(171, 182, 187);
+ 	margin-top: 1em;
+ 	margin-left: 1em;
+ 	margin-bottom: 1em;
+}
+
+h3{
+	margin-top: 2em;
+	margin-left: 1.5em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h4,h5{
+	border-left: 1px solid rgb(171, 182, 187);
+	color: rgb(171, 182, 187);
+	margin-left: 2em;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 1.5em;
+}
+
+h4{
+	padding-top: 0;
+	margin-top: 0.5em;
+}
+
+h6{
+	color:rgb(171, 182, 187);
+	font-size: 1.5em;
+	margin-left: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+a { 
+	color:#f9f7f3;
+	text-decoration: none;
+}
+
+.externalLinks a {	
+	text-decoration: none;
+	color: rgb(171, 182, 187);
+	border-bottom: 1px solid transparent;    
+    width: 0px;
+    transition: 0.5s ease;
+    line-height: 2.5em;
+}
+
+.externalLinks a:hover { 
+	    color: #333333;
+	    cursor: pointer;
+	    border-bottom: 1px solid #333333;
+	    width: 190px;
+
+}
+
+a:hover span {
+    display:none;
+}
+
+a:hover:after {
+	content: attr(data-hover);
+}
+
+p {
+	font-size: 1.5em;
+ 	margin: 1.5em;
+ 	margin-top: 1em;
+ 	margin-left: 2em;
+ 	line-height: 1.5em;
+}
+
+.contact, .about, .experience, .skill, .education {
+	width: 90%;
+	margin:auto;
+}
+
+.logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.nameContact{
+	padding-top: 1em;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#name1 {
+	display: flex;
+}
+
+#name2 {
+	display:none;
+	top:0px;
+	width: 100%;
+    background:rgb(171, 182, 187);
+    position: fixed;
+}
+
+#name2 a {
+	color: #333333;
+  }
+
+.externalLinks {
+	display: flex;
+	flex-direction: column;
+	margin-left: 2.5em;
+	margin-top: 0.6em;
+	margin-right: 3em;
+	font-size: 1.5em;
+	line-height: 1em;
+
+}
+
+.line {
+	margin: auto;
+	height: 5px;
+	width: 90%;
+	border-bottom: 1px solid #333333;
+	margin-bottom: 0.5em;
+}
+
+.item {
+  margin-bottom: 50px; }
+
+.graph {
+  background-color: white;
+  width: 85%;
+  max-width: 430px;
+  height: 0.5em;
+  margin: auto; 
+  margin-top: 0;
+}
+ .graph div {
+    background-color:rgb(171, 182, 187);
+    height: 0.5em;
+  	margin-top:0;
+    -webkit-transition: all 1.3s ease-in-out;
+    transition: all 1.3s ease-in-out; }
+
+.empty {
+  width: 0; }
+
+.illustrator, .photoshop, .indesign, .data, .typography {
+  width: 98%; }
+
+.userflow, .prototype{
+  width: 90%; }
+
+.wireframing, .sketch, .invision {
+  width: 93%; }
+
+.html, .css  {
+  width: 85%; }
+
+.javascript {
+  width: 50%; }
+
+.php {
+  width: 20%; }
+
+@media screen and (min-width: 850px) {
+
+	body {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.right {
+		width:75%;
+		max-width: 750px;
+		margin-left:auto; 
+		margin-right:0;
+	}
+
+	.contact{
+		background-color:rgb(171, 182, 187);
+		width:20%;
+		height: 100%;
+		padding-right: 6em;
+		position: fixed;
+	}
+
+	.logo {
+		display: block;
+		margin-left: 2em;
+	}
+
+	.externalLinks a {	
+	text-decoration: none;
+	color: #333333;
+	}
+
+	.nameContact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h1 {
+		margin-left: 1em;
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+	.contact{
+		width: 202px;
+	}
+
+	.right {
+		max-width: 750px;
+		margin-left:258px;
+
+	}
+
+}
